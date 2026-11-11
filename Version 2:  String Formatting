@@ -1,0 +1,22 @@
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+section = input("Enter your section: ")
+fav_subj = input("Enter your favorite subject: ")
+
+# added string formatting so the names are capitalized
+capitalized_first_name = first_name.capitalize()
+capitalized_last_name = last_name.capitalize()
+
+name = capitalized_first_name+" "+capitalized_last_name # combined the capitalized name
+uppercase_all = name.upper() # uppercasing the name for the name code
+upper_section = section.upper() # uppercased the section
+capitalized_fav_subj = fav_subj.title() # capitalized the favorite subject
+chara_count = len(name) # counted all the characters in the name
+
+print()
+print("Formatted Output:")
+print("Name: "+name)
+print("Name Code: "+uppercase_all)
+print("Section: "+upper_section)
+print("Favorite Subject: "+capitalized_fav_subj)
+print(f"Character Count: {chara_count}")
